@@ -28,7 +28,8 @@ public class AdminLoginView extends JFrame {
 	private JPasswordField adminPasswordTextField;
 
 	/**
-	 * Launch the application.
+	 * 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

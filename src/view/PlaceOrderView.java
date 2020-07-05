@@ -28,7 +28,8 @@ public class PlaceOrderView extends JInternalFrame {
 	private JTextField carLpnTextField;
 
 	/**
-	 * Launch the application.
+	 * 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -45,6 +46,7 @@ public class PlaceOrderView extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public PlaceOrderView() {
+		setTitle("租车");
 		getContentPane().setFont(new Font("新宋体", Font.PLAIN, 14));
 		setIconifiable(true);
 		setClosable(true);

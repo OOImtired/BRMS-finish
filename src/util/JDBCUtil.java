@@ -11,13 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
-    * @ClassName: JDBCUtil
-    * @Description: 关于数据库的一些操作
-    * @author OOI‘m tired
-    * @date 2020年6月23日
-    *
-    */    
+
 public class JDBCUtil {
 	private Connection conn=null;
 	private PreparedStatement pstm=null;
@@ -25,13 +19,6 @@ public class JDBCUtil {
 	private static final String drivername = "com.mysql.jdbc.Driver";
 	private static final String url="jdbc:mysql://localhost:3306/userregistry?user=root&password=12345otj&useSSL=true";
     
-        /**
-        * @Title: MyConnectionDatabase
-        * @Description:连接数据库
-        * @param @return    参数
-        * @return boolean    返回类型
-        * @throws
-        */
         
     public boolean MyConnectionDatabase()  {
         try {
@@ -47,16 +34,7 @@ public class JDBCUtil {
     }
     
     
-        /**
-        * @Title: updatePreparedStatement
-        * @Description: 可执行数据库的增删改功能
-        * @param @param sql  传入一条sql语句
-        * @param @param params   传入sql语句中的“？”参数，按照顺序传入
-        * @return void    返回类型
-        * @throws
-        */
-        
-    public void updatePreparedStatement(String sql,Object... params){
+public void updatePreparedStatement(String sql,Object... params){
 		MyConnectionDatabase();
 		try {
 			pstm = conn.prepareStatement(sql);
@@ -74,18 +52,7 @@ public class JDBCUtil {
 	}
     
     
-        /**
-        * @Title: queryPreparedStatement
-        * @Description: 执行数据库的查询语句
-        * @param @param <T>
-        * @param @param sql  传入一条sql语句
-        * @param @param clazz  传入类，即表中的属性所在的类
-        * @param @param params  传入sql语句中的“？”参数，按照顺序传入
-        * @param @return    参数
-        * @return List<T>    返回类型
-        * @throws
-        */
-        
+
     public <T> List<T> queryPreparedStatement(String sql,Class<T> clazz,List<Object> params){
 		MyConnectionDatabase();
 		List<T> result = new ArrayList<T>();
@@ -219,13 +186,7 @@ public class JDBCUtil {
 		return result;
 	}
     
-        /**
-        * @Title: close
-        * @Description: 释放资源 
-        * @param     参数
-        * @return void    返回类型
-        * @throws
-        */
+      
         
     public void close(){
 		try {

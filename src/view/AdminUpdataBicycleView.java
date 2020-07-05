@@ -35,7 +35,8 @@ public class AdminUpdataBicycleView extends JInternalFrame {
 	private JTextField addressField;
 
 	/**
-	 * Launch the application.
+	 * 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -54,6 +55,7 @@ public class AdminUpdataBicycleView extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public AdminUpdataBicycleView() {
+		setTitle("修改自行车信息");
 		setIconifiable(true);
 		setClosable(true);
 		setBounds(100, 100, 833, 534);

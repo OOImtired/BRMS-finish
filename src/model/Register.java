@@ -3,8 +3,6 @@ package model;
 
 
     /**
-    * @ClassName: Register
-    * @Description: 用户注册的基本信息
     * @author OOI'm tired
     * @date 2020年6月23日
     *

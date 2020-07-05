@@ -30,7 +30,8 @@ public class RegistView extends JFrame {
 	
 
 	/**
-	 * Launch the application.
+	 * 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -49,6 +50,7 @@ public class RegistView extends JFrame {
 	 * Create the frame.
 	 */
 	public RegistView() {
+		setTitle("用户注册");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 434, 291);
 		

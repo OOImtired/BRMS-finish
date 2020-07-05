@@ -28,7 +28,8 @@ public class FeedBackView extends JInternalFrame {
 	FeedBackDao dao=new FeedBackDao();
 
 	/**
-	 * Launch the application.
+	* 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -47,6 +48,7 @@ public class FeedBackView extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public FeedBackView() {
+		setTitle("查看留言反馈");
 		setIconifiable(true);
 		setClosable(true);
 		setBounds(100, 100, 704, 504);

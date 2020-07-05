@@ -7,9 +7,25 @@ import java.util.List;
 import model.Rental;
 import util.JDBCUtil;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MyOrderDao.
+ *
+ * @author OOImtired
+ * @version v1.0
+ * @date 2020年7月5日
+ */
 public class MyOrderDao {
+	
+	/** The jdbc. */
 	JDBCUtil jdbc=new JDBCUtil();
 	
+	/**
+	 * Query my order.
+	 *
+	 * @param brand the brand
+	 * @return the list
+	 */
 	public List<Rental> queryMyOrder(String brand) {
 		String sql="select b.lpn,b.brand,b.type,b.price,b.address,\r\n" + 
 				"r.startdate,r.enddate,r.rentalnumber,r.username,r.telenumber\r\n" + 

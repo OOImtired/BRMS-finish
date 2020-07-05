@@ -28,7 +28,6 @@ import java.sql.Date;
 public class UpdateOrderView extends JInternalFrame {
 	private JTextField OrderQueryTextField;
 	private JTable table;
-    UpdateOrderDao updateOrderDao=new UpdateOrderDao();
     private JTextField lpnField;
     private JTextField brandField;
     private JTextField typeField;
@@ -37,9 +36,11 @@ public class UpdateOrderView extends JInternalFrame {
     private JTextField rentalNumberField;
     private JTextField usernameField;
     private JTextField teleNumberField;
-
+    UpdateOrderDao updateOrderDao=new UpdateOrderDao();
+    
 	/**
-	 * Launch the application.
+	* 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -58,6 +59,7 @@ public class UpdateOrderView extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public UpdateOrderView() {
+		setTitle("修改用户订单");
 		setClosable(true);
 		setIconifiable(true);
 		getContentPane().setFont(new Font("新宋体", Font.PLAIN, 12));

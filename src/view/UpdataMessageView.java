@@ -38,7 +38,8 @@ public class UpdataMessageView extends JInternalFrame {
 	LivingMessageDao dao=new LivingMessageDao();
 
 	/**
-	 * Launch the application.
+	* 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -57,6 +58,7 @@ public class UpdataMessageView extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public UpdataMessageView() {
+		setTitle("留言与反馈");
 		setIconifiable(true);
 		setClosable(true);
 		setBounds(100, 100, 632, 540);

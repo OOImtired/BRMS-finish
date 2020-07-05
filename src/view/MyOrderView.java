@@ -24,7 +24,8 @@ public class MyOrderView extends JInternalFrame {
     MyOrderDao myOrderDao=new MyOrderDao();
 
 	/**
-	 * Launch the application.
+	 * 主程序入口
+	 * @param args 调用参数
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -43,6 +44,7 @@ public class MyOrderView extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public MyOrderView() {
+		setTitle("查询订单");
 		setClosable(true);
 		setIconifiable(true);
 		getContentPane().setFont(new Font("新宋体", Font.PLAIN, 12));

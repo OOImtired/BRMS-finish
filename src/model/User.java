@@ -1,13 +1,7 @@
 package model;
 
 
-    /**
-    * @ClassName: User
-    * @Description: 用户登录
-    * @author OOI‘m tired
-    * @date 2020年6月26日
-    *
-    */
+
     
 public class User {
 	private String username;
